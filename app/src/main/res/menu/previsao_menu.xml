@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_Farenheit"
+        app:showAsAction="always"
+        android:title="°F" />
+
+    <item
+        android:id="@+id/menu_Celsius"
+        app:showAsAction="always"
+        android:title="°C" />
+
+
+    <item
+        android:id="@+id/menu_lista"
+        android:icon="@drawable/ic_list_white_24dp"
+        app:showAsAction="always"
+        android:title="Exibir em lista" />
+
+    <item
+        android:id="@+id/menu_mapa"
+        android:icon="@drawable/ic_map_white_24dp"
+        app:showAsAction="always"
+        android:title="Exibir no mapa" />
+
+</menu>

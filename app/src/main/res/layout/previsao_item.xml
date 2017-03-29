@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardUseCompatPadding="true"
+    tools:context=".previsao.PrevisaoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/icone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cidade"
+            tools:src="@drawable/common_google_signin_btn_icon_dark" />
+
+
+        <TextView
+            android:id="@+id/temperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="27°"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <TextView
+            android:id="@+id/temperaturaMinimaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icone"
+            android:text="Min:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/temperaturaMinima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icone"
+            android:layout_toEndOf="@+id/temperaturaMinimaLabel"
+            android:layout_toRightOf="@+id/temperaturaMinimaLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            tools:text="21"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/temperaturaMaximaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icone"
+            android:layout_toEndOf="@+id/temperaturaMinima"
+            android:layout_toRightOf="@+id/temperaturaMinima"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_marginLeft="8dp"
+            android:text="Max:" />
+
+        <TextView
+            android:id="@+id/temperaturaMaxima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icone"
+            android:layout_toEndOf="@+id/temperaturaMaximaLabel"
+            android:layout_toRightOf="@+id/temperaturaMaximaLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_marginLeft="8dp"
+            tools:text="30°" />
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Céu Aberto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/cidade"
+            android:layout_toRightOf="@+id/icone"
+            android:layout_toEndOf="@+id/icone"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/cidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="São Paulo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
